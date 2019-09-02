@@ -30,4 +30,13 @@ $(document).ready(function(){
         adaptiveHeight: true
     });
 
+    // Burger
+    var nav = $("#nav");
+    var burger = $("#burger");
+    burger.on('click', function(e) {
+        e.preventDefault();
+
+        nav.toggleClass('show');
+    });
+
 });
